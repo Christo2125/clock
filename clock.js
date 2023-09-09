@@ -12,7 +12,12 @@ const time = new Date();
 
 // hours
 const hours = document.querySelector(".hrs")
-hours.textContent = time.getHours()-12;
+if(hours < 12){
+    hours.textContent = time.getHours()-12;
+}
+else{
+    hours.textContent = time.getHours();
+}
 
 // am and pm 
 const AmPm = document.querySelector(".AmPm") 
