@@ -120,6 +120,10 @@ else if(time.getMonth() == 11){
 else {
     month.textContent() = "december";
 }
+// year
+
+const year = document.querySelector(".year")
+year.textContent = time.getFullYear();
 
 
 }
